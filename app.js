@@ -13,7 +13,7 @@ var mongoose = require('mongoose');
 var app = express();
 
 //database is called recipes
-mongoose.connect('mongodb://localhost/recipes')
+mongoose.connect('mongodb://user:userbaby@ds143071.mlab.com:43071/thecrudquest')
 const { connection: db} = mongoose;
 
 db.on('error', console.error.bind(console, 'connection error:'));
